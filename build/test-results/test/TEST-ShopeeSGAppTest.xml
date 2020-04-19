@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ShopeeSGAppTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-19T16:46:31" hostname="MacBook-Pro.local" time="36.269">
+  <properties/>
+  <testcase name="swipeTutorials" classname="ShopeeSGAppTest" time="7.646"/>
+  <testcase name="startButtonTap" classname="ShopeeSGAppTest" time="0.172"/>
+  <testcase name="dismissAdPopup" classname="ShopeeSGAppTest" time="28.451"/>
+  <system-out><![CDATA[(1080, 2028)
+swipped  demo screen 1
+swipped  demo screen 2
+swipped  demo screen 3
+swipped  demo screen 4
+swipped  demo screen 5
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
