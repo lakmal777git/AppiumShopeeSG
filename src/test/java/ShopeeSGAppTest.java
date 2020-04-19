@@ -1,21 +1,12 @@
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.MultiTouchAction;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
-import org.springframework.core.annotation.Order;
-
 import java.net.URL;
-import java.util.List;
 
 
 public class ShopeeSGAppTest {
@@ -27,10 +18,10 @@ public class ShopeeSGAppTest {
     public static void setUp() {
         dc = new DesiredCapabilities();
         dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
-        dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
-        dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.0");
-        dc.setCapability("appPackage", "com.shopee.sg");
+        dc.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 11 Pro Max");
+        dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
+        dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13.4");
+        dc.setCapability("appPackage", "com.beeasy.shopee.sg;");
         dc.setCapability("appActivity", "com.shopee.app.ui.home.HomeActivity_");
         try {
             URL url = new URL("http://127.0.0.1:4723/wd/hub");
@@ -70,7 +61,7 @@ public class ShopeeSGAppTest {
         startBtn.click();
     }
     @Test
-    public void dismissAdPopup() throws InterruptedException {
+    public void MaininAppTests() throws InterruptedException {
         Thread.sleep(10000);
         MobileElement dismissContainer = (MobileElement) driver.findElementByClassName("android.widget.ImageView");
         dismissContainer.click();
